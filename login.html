@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .card{
+            border: 3px solid rgb(236, 216, 216);
+            width: 40%;
+            padding: 100px;
+
+            box-sizing: border-box;
+            box-shadow: 2px 2px 5px 0px #e1bfbfb0;
+
+            border-radius: 5px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card-title, .card-subtitle{
+            text-align: center;
+
+        }
+        .text-input, .mybtn{
+            display: block;
+            width: 100%;
+
+            box-sizing: border-box;
+        }
+
+        .text-input{
+            margin-bottom: 20px;
+            padding: 5px 10px;
+
+        }
+        .mybtn{
+            padding: 5px 10px;
+            background-color: rgb(168, 79, 79);
+            border: none;
+            border-radius: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+
+        <h3 class="card-title">Welcome Back</h3>
+        <p class="card-subtitle">Continue your journey With Us </p>
+
+        <form>
+
+            <label> Email Address</label>
+            <input class="text-input" type="password">
+
+            <label>Password</label>
+            <input class="text-input" type="password">
+
+            <button class="mybtn">Submit</button>
+
+
+        </form>
+    </div>
+</body>
+</html>
