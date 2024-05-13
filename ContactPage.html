@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactPage</title>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+    <style>
+        *{
+            font-family: Noto Sans; 
+       }
+
+        .box{
+            border: 3px solid rgba(83, 96, 238, 0.703);
+            width: 40%;
+            padding: 50px;
+
+            box-sizing: border-box;
+            box-shadow: 2px 2px 5px 0px #bce6dbb0;
+
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            background-image: url("https://i.pinimg.com/564x/0e/96/e1/0e96e16336d87ff7ce40aaedfdbb91da.jpg");
+            background-size: cover;
+        }
+        .card-title{
+            text-align: center;
+        }
+
+        .btn{
+            padding: 5px 10px;
+            background-color: rgba(129, 29, 210, 0.82);
+            border: none;
+            border-radius: 10px;
+
+        }
+        .text-input, .btn{
+            display: block;
+            width: 100%;
+
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <h3 class="box-title">Contact Us</h3>
+
+        <form>
+            <label for="name">Name</label>
+            <input class="text-input" type="text"  id="name" placeholder="Your name" required>
+            <br>
+
+            <label>Email</label>
+            <input class="text-input" type="email" placeholder="Your Email address" required>
+            <br>
+
+            <label for="contact">Contact Number</label>
+            <input class="text-input" type="number" id="contact" placeholder="Your Contact Number" required>
+            <br>
+
+            <label for="message">Any Suggestions</label>
+            <textarea class="text-input" name="message" rows="4" cols="20" placeholder="Your message goes here"></textarea>
+            <br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <br>
+
+            <label for="age">18 or Above</label>
+            <input type="checkbox" id="age">
+            <br>
+            <br>
+
+            <button class="btn">Submit</button>
+            <br>
+            
+        </form>
+    </div>
+</body>
+</html>

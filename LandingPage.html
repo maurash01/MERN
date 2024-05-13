@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
+    <title>Document</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:regular,700" rel="stylesheet" />
+    <link
+        href="https://images.pexels.com/photos/1933239/pexels-photo-1933239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        rel="stylesheet" />
 
     <style>
-        header{
+        :root{
+            --theme-color: green ;
+        }
+        header {
 
             /*background-image: url("https://tse3.mm.bing.net/th?id=OIP.Btp0_0dugL96zB1UJzXlrAHaEK&pid=Api&P=0&h=220");*/
             /*background-image: linear-gradient(0deg, red, green,yellow, blue);*/
-            background-image: linear-gradient(0deg, rgba(106, 177, 111, 0.459), rgba(93, 97, 216, 0.756) ), url("http://www.pixelstalk.net/wp-content/uploads/2016/10/Forest-Backgrounds-HD-Desktop.jpg");
+            background-image: linear-gradient(0deg, rgba(106, 177, 111, 0.459), rgba(93, 97, 216, 0.756)), url("http://www.pixelstalk.net/wp-content/uploads/2016/10/Forest-Backgrounds-HD-Desktop.jpg");
             background-size: cover;
 
 
@@ -21,45 +27,126 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center ;
+            justify-content: center;
             cursor: pointer;
 
 
 
         }
-        header h1{
+
+        header h1 {
             margin: 0;
         }
-        body{
+
+        body {
             margin: 0;
 
         }
-        .header-title{
+
+        .header-title {
             font-size: 50px;
-    
+
         }
-        .header-subtitle{
+
+        .header-subtitle {
             font-size: 20px;
         }
-        .hero-btn:hover{
+
+        .hero-btn {
             background-color: rgb(92, 92, 167);
             color: white;
             padding: 20px 10px;
             border: 2px solid white;
             margin-top: 10px;
-            transition-duration: 0.3s ;
+            transition-duration: 0.3s;
+        }
+
+        .section {
+            border: 2px solid red;
+            padding: 50px 200px;
+        }
+
+        .card-group {
+            /*border: 2px solid blue;*/
+            display: flex;
+            gap: 30px;
+        }
+
+        .card{
+            /*border: 2px solid green;*/
+            text-align: center;
+            padding: 50px;
+            border-radius: 10px;
+            color: var(--theme-color);
+            transition-duration: 0.4s;
+        }
+        .card:hover{
+            color: white;
+            background-color: var(--theme-color);
+        }
+        .section-title{
+            text-align: center;
+            font-size: 40px;
+            color: var(--theme-color);
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+
     <header>
-            <h1 class="header-title">Title Of The Website</h1>
-            <p class="header-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, eos nostrum consequatur illo ipsam voluptatem minima doloremque ea porro dignissimos.</p>
-            <button class="hero-btn">Get Started</button>
+        <h1 class="header-title">Title Of The Website</h1>
+        <p class="header-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam neque qui,
+            corporis ipsum suscipit nam similique laboriosam rerum repellat expedita maxime labore aperiam dignissimos
+            incidunt impedit. Nostrum magnam quaerat deserunt vitae? Doloremque a provident fugiat quo! Fuga eaque
+            dolore nihil?\</p>
+        <button class="hero-btn">Get Started</button>
     </header>
 
     <main>
+        <section class="section feature-section">
+            <H1 class="section-title">Features Section</H1>
+            <div class="card-group">
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-4x"></i>
+                    <h2>Fast Delivery</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita iure dolores, quasi dolorem eos
+                        rerum fuga! Quod laborum error incidunt hic mollitia quos ipsa totam similique cum, repudiandae
+                        earum dignissimos.</p>
+
+
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-4x"></i>
+                    <h2>Fast Delivery</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita iure dolores, quasi dolorem eos
+                        rerum fuga! Quod laborum error incidunt hic mollitia quos ipsa totam similique cum, repudiandae
+                        earum dignissimos.</p>
+
+
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-4x"></i>
+                    <h2>Fast Delivery</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita iure dolores, quasi dolorem eos
+                        rerum fuga! Quod laborum error incidunt hic mollitia quos ipsa totam similique cum, repudiandae
+                        earum dignissimos.</p>
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </section>
 
     </main>
 
@@ -67,4 +154,5 @@
 
     </footer>
 </body>
+
 </html>
