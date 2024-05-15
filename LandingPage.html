@@ -89,6 +89,30 @@
             font-size: 40px;
             color: var(--theme-color);
         }
+        .footer-container{
+            padding: 50px 200px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+        .footer-description{
+           /* border: 2px solid blue;*/
+
+        }
+        .footer-links-group{
+           /* border: 2px solid green; */
+        }
+        .footer-link{
+            display: block;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        footer{
+            background-color: var(--theme-color);
+            color: white;
+
+        }
+
+        
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -140,17 +164,33 @@
 
             </div>
 
-
-
-
-
-
-
         </section>
 
+      
     </main>
 
     <footer>
+        <div class="footer-container">
+            <div class="footer-description">
+                <h2>Company Name</h2>
+                <p>&copy; 2024</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, esse.</p>
+                <a href=""></a>
+            </div>
+            <div class="footer-links-group">
+                <a href="" class="footer-link"><i class="fa-brands fa-facebook-f"></i>Facebook</a>
+                <a href="" class="footer-link"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+                <a href="" class="footer-link"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                <a href="" class="footer-link"><i class="fa-brands fa-github"></i>Github</a>
+            </div>
+            <div class="footer-links-group">
+                <a href="" class="footer-link"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                <a href="" class="footer-link"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+                <a href="" class="footer-link"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                <a href="" class="footer-link"><i class="fa-brands fa-github"></i>Github</a>
+            </div>
+
+        </div>
 
     </footer>
 </body>
