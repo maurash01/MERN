@@ -1,0 +1,20 @@
+let n=40;
+const sqrt = n**0.5
+console.log(sqrt);
+console.log(sqrt===parseInt(sqrt));
+
+//Check If Integer 
+console.log(Number.isInteger(sqrt));
+
+//Check prime 
+
+let num=7;
+let prime=true;
+
+for(let i=2; i<num; i++){
+    if (num%i===0){
+        console.log('Not Prime');
+        break;
+    }
+
+}
