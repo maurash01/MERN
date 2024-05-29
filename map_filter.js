@@ -16,10 +16,10 @@ const cleanedprices = prices.map((p) => { return parseInt(p.slice(1,-2))});
 //console.log(evenNums);
 
 const newwNum = names.filter((n) => { return n.length >5   });
-//console.log(newwNum);
+console.log(newwNum);
 
 const prices2 = [599,220,199,350,3200, 2830, 1980];
 //filter prices bw 500 & 3000
-const newprices = prices2.filter((f) => {})
+const newprices = prices2.filter((f) => {return f > 500 && f < 3000});
 console.log(newprices);
 
