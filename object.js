@@ -67,7 +67,31 @@ console.log("----------------------");
 //Hint: console.log(["a","b","c"].includes("c"))
 const colorphones = smartphoneList.filter((phone)=> {return phone.colors.includes('black')});
 console.log(colorphones);
+console.log('#########################');
 
 
+// Using map 
+const brands = smartphoneList.map((phone) => {return phone.brand})
+console.log(brands);
 
+console.log(new Set(brands));   // for removing duplicacy 
+console.log(Array.from(new Set (brands)));    // converting one iterator to an array 
+
+// 
+
+const pricesnew = smartphoneList.map ((phones) => {return phones.price})
+console.log(pricesnew); 
+
+// get prices after 10% discount 
+
+const discountprice = smartphoneList.map ((phones) => { return (phones.price - phones.price/10 )  })
+// const discountprice = smartphoneList.map ((phones) => { return (phones.price * 0.9 )  })  // Method 2nd 
+console.log(discountprice);
+
+// 
+
+const newbrandmodel = smartphoneList.map ((phones) => { return phones.brand + " " +  phones.model})
+//method2
+// const newbrandmodel = smartphoneList.map ((phones) => { return `${phone.brand} - ${phone.model}`})    // interpolated string or string interpolation use 
+console.log(newbrandmodel);
 
